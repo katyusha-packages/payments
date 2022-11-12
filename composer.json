@@ -1,0 +1,37 @@
+{
+  "name": "katyusha/laravel-package-template",
+  "type": "project",
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "nunomaduro/larastan": "^2.2",
+    "nunomaduro/phpinsights": "^2.6",
+    "friendsofphp/php-cs-fixer": "^3.10",
+    "phpunit/phpunit": "*",
+    "roave/security-advisories": "dev-latest",
+    "orchestra/testbench": "^7.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Katyusha\\Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Katyusha\\Package\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Katyusha\\Package\\PackageServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

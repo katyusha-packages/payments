@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+./vendor/bin/phpinsights analyse --config-path="insights.php" ./src
